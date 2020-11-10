@@ -5,13 +5,13 @@ rock.addEventListener('click', () => {
     // computer choice convert to image
     if (computerChoice <= 0.3) {
         computerChoice = 1;
-        computerImg = './img/resultrockAI.png';
+        computerImg = './img/computerrock.png';
     } else if (computerChoice <= 0.6) {
         computerChoice = 2;
-        computerImg = './img/resultpaperAI.png';
+        computerImg = './img/computerpaper.png';
     } else {
         computerChoice = 3;
-        computerImg = './img/resultscissorsAI.png';
+        computerImg = './img/computerscissors.png';
     }
     // win or lose logic
     if (userChoice === computerChoice) {
@@ -24,7 +24,7 @@ rock.addEventListener('click', () => {
      rendered.innerHTML = `
         <div class="win-lose">${winLoseImg}</div>
         <div class="images">
-        <img class="userChoice" src="./img/resultrock.png" alt="user choice">
+        <img class="userChoice" src="./img/userrock.png" alt="user choice">
         <img class="computerChoice" src="${computerImg}" alt="computer choice">
         </div>
     `;
