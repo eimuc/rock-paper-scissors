@@ -100,6 +100,18 @@ body {
         height: 360px;
         margin-left: calc((100% - 360px) / 2);
     }
+    .rock {
+        top: 80px;
+        left: 150px;
+    }
+    .paper {
+        bottom: 80px;
+        left: 60px;
+    }
+    .scissors {
+        bottom: 80px;
+        right: 60px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -124,5 +136,20 @@ body {
     .computerChoice {
         width: 100px;
         padding: 0px;
+    }
+    .rock {
+        width: 50px;
+        top: 80px;
+        left: 135px;
+    }
+    .paper {
+        width: 80px;
+        bottom: 80px;
+        left: 60px;
+    }
+    .scissors {
+        width: 80px;
+        bottom: 80px;
+        right: 60px;
     }
 }
