@@ -41,36 +41,52 @@ body {
 .result {
     width: 400px;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: calc((100% - 400px) / 2);
+    font-family: prisma;
+    font-weight: bold;
 }
 .win-lose {
     width: 100%;
     color:  #F44D45;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
+.rendered > .images {
+    margin-top: 50px;
+    margin-left: calc((100% - 290px) / 2);
+}
 .userChoice {
-    width: 100px;
+    width: 120px;
+    padding: 10px;
 }
 .computerChoice {
-    width: 100px;
+    width: 150px;
+    padding: 10px;
 }
 .button {
-    width: 91px;
-    height: 20px;
-    font-size: 20px;
+    width: 90px;
+    height: 45px;
+    font-size: 15px;
     cursor: pointer;
     background-color: #F44D45;
     color: white;
     border: 1px solid #F44D45;
     border-radius: 10px;
     margin-top: 50px;
-    margin-left: calc((100% - 91px) / 2);
+    margin-left: calc((100% - 90px) / 2);
     padding: 10px;
+    text-align: center;
 }
 .button:hover {
     border-color: white;
+}
+
+
+@font-face {
+    font-family: "prisma";
+    src: url(../fonts/Prisma.ttf) format("truetype");
+    font-style: normal;
 }
 
 @media (max-width: 420px) {

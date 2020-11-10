@@ -1,7 +1,7 @@
 scissors.addEventListener('click', () => { 
     DOM.classList.add('anim');
     computerChoice = Math.random();
-    userChoice = 1;
+    userChoice = 3;
     // computer choice convert to image
     if (computerChoice <= 0.3) {
         computerChoice = 1;
@@ -14,17 +14,19 @@ scissors.addEventListener('click', () => {
         computerImg = '../img/result-scissorsAI.png';
     }
     // win or lose logic
-    if (userChoice == computerChoice) {
+    if (userChoice === computerChoice) {
         winLoseImg = 'DRAW';
-    } else if (userChoice == 3 & computerChoice == 1) {
-        winLoseImg = 'LOSE';
+    } else if (userChoice === 3 & computerChoice === 1) {
+        winLoseImg = 'YOU LOSE';
     } else {
-        winLoseImg = 'WIN';
+        winLoseImg = 'YOU WIN';
     }
     rendered.innerHTML = `
         <div class="win-lose">${winLoseImg}</div>
-        <img class="userChoice" src="../img/result-rock.png" alt="user choice">
+        <div class="images">
+        <img class="userChoice" src="../img/result-scissors.png" alt="user choice">
         <img class="computerChoice" src="${computerImg}" alt="computer choice">
+        </div>
     `;
 });
 

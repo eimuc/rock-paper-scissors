@@ -14,17 +14,19 @@ rock.addEventListener('click', () => {
         computerImg = '../img/result-scissorsAI.png';
     }
     // win or lose logic
-    if (userChoice == computerChoice) {
-        winLoseImg = 'DRAW';
-    } else if (userChoice == 1 & computerChoice == 2) {
-        winLoseImg = 'LOSE';
+    if (userChoice === computerChoice) {
+        winLoseImg = 'DRAW!';
+    } else if (userChoice === 1 & computerChoice === 2) {
+        winLoseImg = 'YOU LOSE !';
     } else {
-        winLoseImg = 'WIN';
+        winLoseImg = 'YOU WIN !';
     }
-    rendered.innerHTML = `
+     rendered.innerHTML = `
         <div class="win-lose">${winLoseImg}</div>
+        <div class="images">
         <img class="userChoice" src="../img/result-rock.png" alt="user choice">
         <img class="computerChoice" src="${computerImg}" alt="computer choice">
+        </div>
     `;
 });
 
