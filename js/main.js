@@ -1,38 +1,18 @@
 const DOM = document.querySelector('.container');
-const resultDOM = document.querySelector('.result');
-const rockDOM = document.querySelector('.rock');
-const paperDOM = document.querySelector('.paper');
-const scissorsDOM = document.querySelector('.scissors');
-const playAgainDOM = document.querySelector('.button');
+const result = document.querySelector('.result');
+const rock = document.querySelector('.rock');
+const paper = document.querySelector('.paper');
+const scissors = document.querySelector('.scissors');
+const playAgain = document.querySelector('.button');
+const rendered = document.querySelector('.rendered');
+let computerChoice = Math.random();
+let userChoice = 0;
+let computerImg = 0;
+let winLose = 0;
+let winLoseResult = 0;
 
-rockDOM.addEventListener('click', () => { DOM.classList.add('anim'); });
-
-rockDOM.addEventListener("click", function(){setTimeout(myFunc, 2000)});
-function myFunc() {
-    DOM.classList.add('invisible');
-    resultDOM.classList.remove('invisible');
-}
-
-paperDOM.addEventListener('click', () => { DOM.classList.add('anim'); });
-
-paperDOM.addEventListener("click", function(){setTimeout(myFunc, 2000)});
-function myFunc() {
-    DOM.classList.add('invisible');
-    resultDOM.classList.remove('invisible');
-}
-
-scissorsDOM.addEventListener('click', () => { DOM.classList.add('anim'); });
-
-scissorsDOM.addEventListener("click", function(){setTimeout(myFunc, 2000)});
-function myFunc() {
-    DOM.classList.add('invisible');
-    resultDOM.classList.remove('invisible');
-}
-
-
-
-playAgainDOM.addEventListener('click', () => { 
+playAgain.addEventListener('click', () => { 
     DOM.classList.remove('anim');
     DOM.classList.remove('invisible');
-    resultDOM.classList.add('invisible');
+    result.classList.add('invisible');
 });

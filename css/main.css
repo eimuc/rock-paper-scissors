@@ -44,11 +44,21 @@ body {
     margin-top: 50px;
     margin-left: calc((100% - 400px) / 2);
 }
-.result > img {
+.win-lose {
     width: 100%;
+    color:  #F44D45;
+    font-size: 30px;
+    text-align: center;
+}
+.userChoice {
+    width: 100px;
+}
+.computerChoice {
+    width: 100px;
 }
 .button {
     width: 91px;
+    height: 20px;
     font-size: 20px;
     cursor: pointer;
     background-color: #F44D45;
@@ -62,6 +72,7 @@ body {
 .button:hover {
     border-color: white;
 }
+
 @media (max-width: 420px) {
     div {
         width: 360px;
