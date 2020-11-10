@@ -6,7 +6,7 @@ paper.addEventListener('click', () => {
     // computer choice convert to image
     if (computerChoice <= 0.3) {
         computerChoice = 1;
-        computerImg = '../img/computerrock.png';
+        computerImg = './img/computerrock.png';
     } else if (computerChoice <= 0.6) {
         computerChoice = 2;
         computerImg = './img/computerpaper.png';
