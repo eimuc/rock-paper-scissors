@@ -25,8 +25,8 @@ paper.addEventListener('click', () => {
    rendered.innerHTML = `
         <div class="win-lose">${winLoseImg}</div>
         <div class="images">
-        <img class="userChoice" src="./img/userpaper.png" alt="user choice">
-        <img class="computerChoice" src="${computerImg}" alt="computer choice">
+        <img class="userChoice" src="./img/userpaper.png" alt="user choice img">
+        <img class="computerChoice" src="${computerImg}" alt="computer choice img">
         </div>
     `;
 });
