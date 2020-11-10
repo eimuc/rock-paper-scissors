@@ -90,7 +90,12 @@ body {
 }
 
 @media (max-width: 420px) {
-    div {
+    .container {
+        width: 360px;
+        height: 360px;
+        margin-left: calc((100% - 360px) / 2);
+    }
+    .result {
         width: 360px;
         height: 360px;
         margin-left: calc((100% - 360px) / 2);
@@ -98,9 +103,26 @@ body {
 }
 
 @media (max-width: 320px) {
-    div {
+    .container {
         width: 320px;
         height: 320px;
         margin-left: calc((100% - 320px) / 2);
+    }
+    .result {
+        width: 320px;
+        height: 320px;
+        margin-left: calc((100% - 320px) / 2);
+    }
+    .rendered > .images {
+        margin-top: 50px;
+        margin-left: calc((100% - 200px) / 2);
+    }
+    .userChoice {
+        width: 100px;
+        padding: 0px;
+    }
+    .computerChoice {
+        width: 100px;
+        padding: 0px;
     }
 }
